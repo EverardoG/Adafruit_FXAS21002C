@@ -41,6 +41,8 @@
 #include <limits.h>
 
 #include "Adafruit_FXAS21002C.h"
+// using namespace FX;
+namespace FX {
 
 /***************************************************************************
  PRIVATE FUNCTIONS
@@ -331,4 +333,5 @@ void  Adafruit_FXAS21002C::getSensor(sensor_t* sensor)
   sensor->max_value   = (float)this->_range * SENSORS_DPS_TO_RADS;
   sensor->min_value   = (this->_range * -1.0) * SENSORS_DPS_TO_RADS;
   sensor->resolution  = 0.0F; // TBD
+}
 }

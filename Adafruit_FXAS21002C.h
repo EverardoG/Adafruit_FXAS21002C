@@ -29,6 +29,7 @@
 #include <Adafruit_Sensor.h>
 #include <Wire.h>
 
+namespace FX {
 /*=========================================================================
     I2C ADDRESS/BITS AND SETTINGS
     -----------------------------------------------------------------------*/
@@ -120,5 +121,5 @@ class Adafruit_FXAS21002C : public Adafruit_Sensor
     gyroRange_t _range;
     int32_t     _sensorID;
 };
-
+}
 #endif
